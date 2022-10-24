@@ -5,6 +5,7 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 3px;
 
   background-color: ${props => props.theme.colors.beige};
   width: 800px;
@@ -21,6 +22,7 @@ export const StatsList = styled.ul`
   display: flex;
   align-items: center;
   width: 100%;
+
   }
 `;
 
@@ -31,12 +33,16 @@ export const StatsItem = styled.li`
   padding: ${props => props.theme.spacing(2)};
   align-items: center;
   background-color: ${props => getRandomHexColor(props)};
+
   }
 `;
 
 export const Label = styled.span`
-font-size: ${props => props.theme.fontSize.s};
-margin-bottom: ${props => props.theme.spacing(1)};
+  font-size: ${props => props.theme.fontSize.s};
+  margin-bottom: ${props => props.theme.spacing(1)};
+  color: ${props => props.theme.colors.white};
+`;
 
-  }
+export const Percentage = styled.span`
+  color: ${props => props.theme.colors.white};
 `;
