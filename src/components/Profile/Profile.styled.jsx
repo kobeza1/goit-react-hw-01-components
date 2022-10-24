@@ -5,6 +5,7 @@ export const Card = styled.div`
   width: ${props => props.theme.spacing(40)};
   margin-bottom: ${props => props.theme.spacing(3)};
   margin-top: ${props => props.theme.spacing(3)};
+  border-radius: 5px;
 `;
 
 export const UserInfo = styled.div`
@@ -48,14 +49,25 @@ export const Stats = styled.ul`
   align-items: center;
   background-color: white;
   font-size: ${props => props.theme.fontSize.s};
-  padding: ${props => props.theme.spacing(2)};
+  border-radius: 5px;
 `;
 
 export const StatsItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-basis: calc((100%) / 3);
   :not(:last-child) {
-    margin-right: ${props => props.theme.spacing(3)};
+    border-right: 1px solid;
+    border-color: ${props => props.theme.colors.raspberry};
   }
+  padding: ${props => props.theme.spacing(2)} 0;
+`;
+
+export const Label = styled.span`
+  margin-bottom: ${props => props.theme.spacing(0.5)};
+`;
+
+export const Quantity = styled.span`
+  font-weight: 700;
 `;
