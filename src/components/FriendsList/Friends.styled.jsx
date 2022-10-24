@@ -2,16 +2,18 @@ import styled from '@emotion/styled';
 
 export const Friends = styled.ul`
   width: ${props => props.theme.spacing(40)};
-  background-color: ${props => props.theme.colors.beige};
   display: flex;
   flex-direction: column;
-  padding: ${props => props.theme.spacing(2)};
   margin-bottom: ${props => props.theme.spacing(3)};
 `;
 
 export const FriendItem = styled.li`
   display: flex;
   align-items: center;
+  background-color: ${props => props.theme.colors.beige};
+  padding: ${props => props.theme.spacing(2)};
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.4);
 
   :not(:last-child) {
     margin-bottom: ${props => props.theme.spacing(2)};
