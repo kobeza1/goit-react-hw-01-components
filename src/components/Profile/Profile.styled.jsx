@@ -6,6 +6,7 @@ export const Card = styled.div`
   margin-bottom: ${props => props.theme.spacing(3)};
   margin-top: ${props => props.theme.spacing(3)};
   border-radius: 5px;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.4);
 `;
 
 export const UserInfo = styled.div`

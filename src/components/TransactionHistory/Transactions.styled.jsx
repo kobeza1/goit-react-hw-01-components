@@ -4,8 +4,8 @@ export const Table = styled.table`
   width: 800px;
   table-layout: fixed;
   border-collapse: collapse;
-  border: 1px solid white;
   background-color: ${props => props.theme.colors.grayTable};
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.4);
 `;
 
 export const Head = styled.thead`

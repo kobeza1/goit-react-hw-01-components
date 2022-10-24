@@ -10,6 +10,7 @@ export const Section = styled.section`
   background-color: ${props => props.theme.colors.beige};
   width: 800px;
   margin-bottom: ${props => props.theme.spacing(3)};
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.4);
 `;
 
 export const Title = styled.h2`
