@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import { number } from 'prop-types';
 import { FriendsListItem } from './FriendsListItem';
+import { Friends } from './Friends.styled';
 
 export const FriendsList = ({ friends }) => {
   return (
-    <ul className="friend-list">
+    <Friends className="friend-list">
       {friends.map(friend => {
         return (
           <FriendsListItem
@@ -15,7 +15,7 @@ export const FriendsList = ({ friends }) => {
           />
         );
       })}
-    </ul>
+    </Friends>
   );
 };
 

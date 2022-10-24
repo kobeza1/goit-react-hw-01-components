@@ -1,22 +1,24 @@
+import { Table, Head, HeadName, Row, Body, Cell } from './Transactions.styled';
+
 export const TransactionHistory = ({ items }) => {
   return (
-    <table className="transaction-history">
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
-        </tr>
-      </thead>
+    <Table className="transaction-history">
+      <Head>
+        <Row>
+          <HeadName>Type</HeadName>
+          <HeadName>Amount</HeadName>
+          <HeadName>Currency</HeadName>
+        </Row>
+      </Head>
       {items.map(({ id, type, amount, currency }) => (
-        <tbody key={id}>
-          <tr>
-            <td>{type}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
-          </tr>
-        </tbody>
+        <Body key={id}>
+          <Row>
+            <Cell>{type}</Cell>
+            <Cell>{amount}</Cell>
+            <Cell>{currency}</Cell>
+          </Row>
+        </Body>
       ))}
-    </table>
+    </Table>
   );
 };
